@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Definición del conjunto de caracteres para la página -->
+    <meta charset="UTF-8">
+
+    <!-- Asegura que la página sea responsive en dispositivos móviles -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Título de la página que aparece en la pestaña del navegador -->
+    <title>Manejo y vista de variables con Particle</title>
+
+    <!-- Enlace al archivo de estilos CSS personalizado -->
+    <link rel="stylesheet" href="Actividad_6.css">
+</head>
+<body>
+    <!-- Encabezado principal de la página -->
+    <h1>Manejo de variables</h1>
+
+    <!-- Encabezado secundario que proporciona un rango de valores -->
+    <h3>Del 1 al 20</h3>
+
+    <!-- Control deslizante (slider) para seleccionar un valor entre 1 y 20 -->
+    <input type="range" min="1" max="20" value="1" id="Ktms">
+
+    <!-- Contenedor para mostrar el valor actual del control deslizante -->
+    <div id="slider-value">
+        Valor generado del slider y enviado: <span id="Kvaluetms">1</span>
+    </div>
+
+    <!-- Contenedor para mostrar el valor actual de la variable de Particle -->
+    <p>
+        Valor recodigo del slider y multiplicado por TMS: <span id="particleValue">-</span>
+    </p>
+
+    <!-- Inclusión de bibliotecas JavaScript necesarias -->
+    <!-- jQuery para manipulación del DOM y eventos -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <!-- Particle API JS para interactuar con dispositivos Particle -->
+    <script src="https://cdn.jsdelivr.net/npm/particle-api-js@8/dist/particle.min.js"></script>
+
+    <!-- Inclusión del archivo JavaScript personalizado para la funcionalidad de la página -->
+    <script src="Actividad_6.js"></script>
+</body>
+</html>
